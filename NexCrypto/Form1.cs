@@ -23,6 +23,11 @@ namespace NexCrypto
         private Form activeForm = null;
         private void openChildForm(Form childForm)
         {
+            if(!Nex.LoggedIn)
+            {
+                childForm = new Login();
+            }
+
             if (activeForm != null) activeForm.Close();
             activeForm = childForm;
             childForm.TopLevel = false;
