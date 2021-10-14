@@ -25,5 +25,8 @@ namespace NexCrypto.Models
         [Required]
         [MaxLength(255)]
         public string Password { get; set; }
+
+        [Required]
+        public bool IsAdmin { get; set; }
     }
 }

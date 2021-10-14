@@ -47,6 +47,7 @@
             this.cryptoButton = new System.Windows.Forms.Button();
             this.dashboardButton = new System.Windows.Forms.Button();
             this.childPanel = new System.Windows.Forms.Panel();
+            this.usernameLabel = new System.Windows.Forms.Label();
             this.topPanel.SuspendLayout();
             this.leftPanel.SuspendLayout();
             this.adminPanel.SuspendLayout();
@@ -58,11 +59,13 @@
             // topPanel
             // 
             this.topPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(33)))), ((int)(((byte)(71)))));
+            this.topPanel.Controls.Add(this.usernameLabel);
             this.topPanel.Controls.Add(this.label1);
             this.topPanel.Dock = System.Windows.Forms.DockStyle.Top;
             this.topPanel.Location = new System.Drawing.Point(0, 0);
+            this.topPanel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.topPanel.Name = "topPanel";
-            this.topPanel.Size = new System.Drawing.Size(1104, 81);
+            this.topPanel.Size = new System.Drawing.Size(828, 66);
             this.topPanel.TabIndex = 0;
             // 
             // label1
@@ -70,9 +73,10 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.label1.Location = new System.Drawing.Point(22, 24);
+            this.label1.Location = new System.Drawing.Point(16, 20);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(132, 29);
+            this.label1.Size = new System.Drawing.Size(104, 24);
             this.label1.TabIndex = 0;
             this.label1.Text = "Nex Crypto";
             // 
@@ -85,9 +89,10 @@
             this.leftPanel.Controls.Add(this.cryptoButton);
             this.leftPanel.Controls.Add(this.dashboardButton);
             this.leftPanel.Dock = System.Windows.Forms.DockStyle.Left;
-            this.leftPanel.Location = new System.Drawing.Point(0, 81);
+            this.leftPanel.Location = new System.Drawing.Point(0, 66);
+            this.leftPanel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.leftPanel.Name = "leftPanel";
-            this.leftPanel.Size = new System.Drawing.Size(178, 643);
+            this.leftPanel.Size = new System.Drawing.Size(134, 522);
             this.leftPanel.TabIndex = 1;
             // 
             // adminPanel
@@ -99,9 +104,10 @@
             this.adminPanel.Controls.Add(this.adminUsersPanel);
             this.adminPanel.Controls.Add(this.adminUserButton);
             this.adminPanel.Dock = System.Windows.Forms.DockStyle.Top;
-            this.adminPanel.Location = new System.Drawing.Point(0, 210);
+            this.adminPanel.Location = new System.Drawing.Point(0, 170);
+            this.adminPanel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.adminPanel.Name = "adminPanel";
-            this.adminPanel.Size = new System.Drawing.Size(178, 252);
+            this.adminPanel.Size = new System.Drawing.Size(134, 204);
             this.adminPanel.TabIndex = 2;
             this.adminPanel.Visible = false;
             // 
@@ -111,9 +117,10 @@
             this.adminCryptoPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(33)))), ((int)(((byte)(60)))));
             this.adminCryptoPanel.Controls.Add(this.adminViewCryptoButton);
             this.adminCryptoPanel.Dock = System.Windows.Forms.DockStyle.Top;
-            this.adminCryptoPanel.Location = new System.Drawing.Point(0, 210);
+            this.adminCryptoPanel.Location = new System.Drawing.Point(0, 170);
+            this.adminCryptoPanel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.adminCryptoPanel.Name = "adminCryptoPanel";
-            this.adminCryptoPanel.Size = new System.Drawing.Size(178, 42);
+            this.adminCryptoPanel.Size = new System.Drawing.Size(134, 34);
             this.adminCryptoPanel.TabIndex = 6;
             this.adminCryptoPanel.Visible = false;
             // 
@@ -127,8 +134,9 @@
             this.adminViewCryptoButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.adminViewCryptoButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.adminViewCryptoButton.Location = new System.Drawing.Point(0, 0);
+            this.adminViewCryptoButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.adminViewCryptoButton.Name = "adminViewCryptoButton";
-            this.adminViewCryptoButton.Size = new System.Drawing.Size(178, 42);
+            this.adminViewCryptoButton.Size = new System.Drawing.Size(134, 34);
             this.adminViewCryptoButton.TabIndex = 4;
             this.adminViewCryptoButton.Text = "View Crypto";
             this.adminViewCryptoButton.UseVisualStyleBackColor = true;
@@ -143,9 +151,10 @@
             this.adminCryptoButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(25)))), ((int)(((byte)(65)))));
             this.adminCryptoButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.adminCryptoButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.adminCryptoButton.Location = new System.Drawing.Point(0, 168);
+            this.adminCryptoButton.Location = new System.Drawing.Point(0, 136);
+            this.adminCryptoButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.adminCryptoButton.Name = "adminCryptoButton";
-            this.adminCryptoButton.Size = new System.Drawing.Size(178, 42);
+            this.adminCryptoButton.Size = new System.Drawing.Size(134, 34);
             this.adminCryptoButton.TabIndex = 5;
             this.adminCryptoButton.Text = "Crypto";
             this.adminCryptoButton.UseVisualStyleBackColor = false;
@@ -159,9 +168,10 @@
             this.adminUsersPanel.Controls.Add(this.adminAddUserButton);
             this.adminUsersPanel.Controls.Add(this.adminUsersButton);
             this.adminUsersPanel.Dock = System.Windows.Forms.DockStyle.Top;
-            this.adminUsersPanel.Location = new System.Drawing.Point(0, 42);
+            this.adminUsersPanel.Location = new System.Drawing.Point(0, 34);
+            this.adminUsersPanel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.adminUsersPanel.Name = "adminUsersPanel";
-            this.adminUsersPanel.Size = new System.Drawing.Size(178, 126);
+            this.adminUsersPanel.Size = new System.Drawing.Size(134, 102);
             this.adminUsersPanel.TabIndex = 4;
             this.adminUsersPanel.Visible = false;
             // 
@@ -174,9 +184,10 @@
             this.adminEditUserButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(25)))), ((int)(((byte)(65)))));
             this.adminEditUserButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.adminEditUserButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.adminEditUserButton.Location = new System.Drawing.Point(0, 84);
+            this.adminEditUserButton.Location = new System.Drawing.Point(0, 68);
+            this.adminEditUserButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.adminEditUserButton.Name = "adminEditUserButton";
-            this.adminEditUserButton.Size = new System.Drawing.Size(178, 42);
+            this.adminEditUserButton.Size = new System.Drawing.Size(134, 34);
             this.adminEditUserButton.TabIndex = 4;
             this.adminEditUserButton.Text = "Edit User";
             this.adminEditUserButton.UseVisualStyleBackColor = true;
@@ -190,9 +201,10 @@
             this.adminAddUserButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(25)))), ((int)(((byte)(65)))));
             this.adminAddUserButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.adminAddUserButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.adminAddUserButton.Location = new System.Drawing.Point(0, 42);
+            this.adminAddUserButton.Location = new System.Drawing.Point(0, 34);
+            this.adminAddUserButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.adminAddUserButton.Name = "adminAddUserButton";
-            this.adminAddUserButton.Size = new System.Drawing.Size(178, 42);
+            this.adminAddUserButton.Size = new System.Drawing.Size(134, 34);
             this.adminAddUserButton.TabIndex = 3;
             this.adminAddUserButton.Text = "Add User";
             this.adminAddUserButton.UseVisualStyleBackColor = true;
@@ -207,8 +219,9 @@
             this.adminUsersButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.adminUsersButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.adminUsersButton.Location = new System.Drawing.Point(0, 0);
+            this.adminUsersButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.adminUsersButton.Name = "adminUsersButton";
-            this.adminUsersButton.Size = new System.Drawing.Size(178, 42);
+            this.adminUsersButton.Size = new System.Drawing.Size(134, 34);
             this.adminUsersButton.TabIndex = 2;
             this.adminUsersButton.Text = "Users";
             this.adminUsersButton.UseVisualStyleBackColor = true;
@@ -224,8 +237,9 @@
             this.adminUserButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.adminUserButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.adminUserButton.Location = new System.Drawing.Point(0, 0);
+            this.adminUserButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.adminUserButton.Name = "adminUserButton";
-            this.adminUserButton.Size = new System.Drawing.Size(178, 42);
+            this.adminUserButton.Size = new System.Drawing.Size(134, 34);
             this.adminUserButton.TabIndex = 2;
             this.adminUserButton.Text = "User";
             this.adminUserButton.UseVisualStyleBackColor = false;
@@ -240,9 +254,10 @@
             this.adminButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(25)))), ((int)(((byte)(65)))));
             this.adminButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.adminButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.adminButton.Location = new System.Drawing.Point(0, 168);
+            this.adminButton.Location = new System.Drawing.Point(0, 136);
+            this.adminButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.adminButton.Name = "adminButton";
-            this.adminButton.Size = new System.Drawing.Size(178, 42);
+            this.adminButton.Size = new System.Drawing.Size(134, 34);
             this.adminButton.TabIndex = 3;
             this.adminButton.Text = "Admin";
             this.adminButton.UseVisualStyleBackColor = true;
@@ -255,9 +270,10 @@
             this.cryptosPanel.Controls.Add(this.button1);
             this.cryptosPanel.Controls.Add(this.cryptosButton);
             this.cryptosPanel.Dock = System.Windows.Forms.DockStyle.Top;
-            this.cryptosPanel.Location = new System.Drawing.Point(0, 84);
+            this.cryptosPanel.Location = new System.Drawing.Point(0, 68);
+            this.cryptosPanel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cryptosPanel.Name = "cryptosPanel";
-            this.cryptosPanel.Size = new System.Drawing.Size(178, 84);
+            this.cryptosPanel.Size = new System.Drawing.Size(134, 68);
             this.cryptosPanel.TabIndex = 2;
             this.cryptosPanel.Visible = false;
             // 
@@ -270,9 +286,10 @@
             this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(25)))), ((int)(((byte)(65)))));
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.button1.Location = new System.Drawing.Point(0, 42);
+            this.button1.Location = new System.Drawing.Point(0, 34);
+            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(178, 42);
+            this.button1.Size = new System.Drawing.Size(134, 34);
             this.button1.TabIndex = 2;
             this.button1.Text = "Search";
             this.button1.UseVisualStyleBackColor = true;
@@ -287,8 +304,9 @@
             this.cryptosButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cryptosButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.cryptosButton.Location = new System.Drawing.Point(0, 0);
+            this.cryptosButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cryptosButton.Name = "cryptosButton";
-            this.cryptosButton.Size = new System.Drawing.Size(178, 42);
+            this.cryptosButton.Size = new System.Drawing.Size(134, 34);
             this.cryptosButton.TabIndex = 1;
             this.cryptosButton.Text = "Cryptos";
             this.cryptosButton.UseVisualStyleBackColor = true;
@@ -302,9 +320,10 @@
             this.cryptoButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(25)))), ((int)(((byte)(65)))));
             this.cryptoButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cryptoButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.cryptoButton.Location = new System.Drawing.Point(0, 42);
+            this.cryptoButton.Location = new System.Drawing.Point(0, 34);
+            this.cryptoButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cryptoButton.Name = "cryptoButton";
-            this.cryptoButton.Size = new System.Drawing.Size(178, 42);
+            this.cryptoButton.Size = new System.Drawing.Size(134, 34);
             this.cryptoButton.TabIndex = 1;
             this.cryptoButton.Text = "Crypto";
             this.cryptoButton.UseVisualStyleBackColor = true;
@@ -320,8 +339,9 @@
             this.dashboardButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.dashboardButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.dashboardButton.Location = new System.Drawing.Point(0, 0);
+            this.dashboardButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dashboardButton.Name = "dashboardButton";
-            this.dashboardButton.Size = new System.Drawing.Size(178, 42);
+            this.dashboardButton.Size = new System.Drawing.Size(134, 34);
             this.dashboardButton.TabIndex = 0;
             this.dashboardButton.Text = "Dashboard";
             this.dashboardButton.UseVisualStyleBackColor = true;
@@ -331,21 +351,37 @@
             // 
             this.childPanel.AutoSize = true;
             this.childPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.childPanel.Location = new System.Drawing.Point(178, 81);
+            this.childPanel.Location = new System.Drawing.Point(134, 66);
+            this.childPanel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.childPanel.Name = "childPanel";
-            this.childPanel.Size = new System.Drawing.Size(926, 643);
+            this.childPanel.Size = new System.Drawing.Size(694, 522);
             this.childPanel.TabIndex = 2;
+            // 
+            // usernameLabel
+            // 
+            this.usernameLabel.AutoSize = true;
+            this.usernameLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.usernameLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.usernameLabel.Location = new System.Drawing.Point(711, 26);
+            this.usernameLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.usernameLabel.Name = "usernameLabel";
+            this.usernameLabel.Size = new System.Drawing.Size(0, 18);
+            this.usernameLabel.TabIndex = 1;
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(51)))), ((int)(((byte)(91)))));
-            this.ClientSize = new System.Drawing.Size(1104, 724);
+            this.ClientSize = new System.Drawing.Size(828, 588);
             this.Controls.Add(this.childPanel);
             this.Controls.Add(this.leftPanel);
             this.Controls.Add(this.topPanel);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.HelpButton = true;
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.topPanel.ResumeLayout(false);
             this.topPanel.PerformLayout();
@@ -382,6 +418,7 @@
         private System.Windows.Forms.Button cryptosButton;
         private System.Windows.Forms.Button adminButton;
         private System.Windows.Forms.Panel childPanel;
+        private System.Windows.Forms.Label usernameLabel;
     }
 }
 

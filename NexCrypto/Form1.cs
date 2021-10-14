@@ -17,7 +17,7 @@ namespace NexCrypto
             InitializeComponent();
             Nex.Initialize();
 
-            this.openChildForm(new Login());
+            this.openChildForm(new Login(this));
         }
 
         private Form activeForm = null;
@@ -25,7 +25,7 @@ namespace NexCrypto
         {
             if(!Nex.LoggedIn)
             {
-                childForm = new Login();
+                childForm = new Login(this);
             }
 
             if (activeForm != null) activeForm.Close();
@@ -81,6 +81,11 @@ namespace NexCrypto
             this.closePanels();
             this.adminPanel.Visible = true;
             this.adminCryptoPanel.Visible = true;
+        }
+
+        public void UpdateUsername(string username)
+        {
+            this.usernameLabel.Text = username;
         }
     }
 }

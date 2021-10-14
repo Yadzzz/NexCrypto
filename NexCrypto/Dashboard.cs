@@ -12,9 +12,22 @@ namespace NexCrypto
 {
     public partial class Dashboard : Form
     {
+        private Form1 mainForm;
+
         public Dashboard()
         {
             InitializeComponent();
+        }
+
+        public Dashboard(Form1 callingForm)
+        {
+            this.mainForm = callingForm;
+            InitializeComponent();
+        }
+
+        private void Dashboard_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

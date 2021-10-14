@@ -13,8 +13,16 @@ namespace NexCrypto
 {
     public partial class Login : Form
     {
+        private Form1 mainForm;
+
         public Login()
         {
+            InitializeComponent();
+        }
+
+        public Login(Form1 callingForm)
+        {
+            this.mainForm = callingForm;
             InitializeComponent();
         }
 
@@ -35,7 +43,18 @@ namespace NexCrypto
 
         private void checkLoginCredentials(string username, string password)
         {
+            var user = Nex.NexCryptoContext.Users.SingleOrDefault(usr => usr.Username == username && usr.Password == password);
 
+            if(user == null)
+            {
+                MessageBox.Show("Wrong login details");
+                return;
+            }
+
+            Nex.LoggedInUser = user;
+            Nex.LoggedIn = true;
+            this.mainForm.UpdateUsername(user.Username);
+            this.Hide();
         }
         
         private string getPasswordHash(string password)
