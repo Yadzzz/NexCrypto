@@ -54,7 +54,10 @@ namespace NexCrypto
             Nex.LoggedInUser = user;
             Nex.LoggedIn = true;
             this.mainForm.UpdateUsername(user.Username);
-            this.Hide();
+            this.mainForm.OnLogin(user.IsAdmin);
+            //this.Hide();
+            this.mainForm.ViewDashboard();
+            this.Close();
         }
         
         private string getPasswordHash(string password)
@@ -64,6 +67,11 @@ namespace NexCrypto
             var sha1data = sha1.ComputeHash(data);
 
             return Encoding.ASCII.GetString(sha1data);
+        }
+
+        private void Login_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

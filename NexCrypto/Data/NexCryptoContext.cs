@@ -11,7 +11,7 @@ namespace NexCrypto.Data
 {
     public class NexCryptoContext : DbContext
     {
-        public DbSet<Users> Users { get; set; }
+        public DbSet<Models.Users> Users { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {

@@ -300,6 +300,18 @@
   <ItemGroup>
     <Compile Include="CryptoData\Crypto.cs" />
     <Compile Include="CryptoData\CryptoManager.cs" />
+    <Compile Include="Cryptos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cryptos.Designer.cs">
+      <DependentUpon>Cryptos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CryptoSearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CryptoSearch.Designer.cs">
+      <DependentUpon>CryptoSearch.cs</DependentUpon>
+    </Compile>
     <Compile Include="Dashboard.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -326,8 +338,25 @@
     <Compile Include="Migrations\NexCryptoContextModelSnapshot.cs" />
     <Compile Include="Models\Users.cs" />
     <Compile Include="Nex.cs" />
+    <Compile Include="NexDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>NexDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Users.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Users.Designer.cs">
+      <DependentUpon>Users.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Cryptos.resx">
+      <DependentUpon>Cryptos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CryptoSearch.resx">
+      <DependentUpon>CryptoSearch.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Dashboard.resx">
       <DependentUpon>Dashboard.cs</DependentUpon>
     </EmbeddedResource>
@@ -345,7 +374,22 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Users.resx">
+      <DependentUpon>Users.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="NexDataSet.xsc">
+      <DependentUpon>NexDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="NexDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>NexDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="NexDataSet.xss">
+      <DependentUpon>NexDataSet.xsd</DependentUpon>
+    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -360,7 +404,15 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\Bitcoin-BTC-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ethereum-ETH-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\xrp-3229129-2716586.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>

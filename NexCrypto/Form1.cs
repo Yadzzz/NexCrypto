@@ -44,12 +44,12 @@ namespace NexCrypto
             this.cryptosPanel.Visible = false;
             this.adminPanel.Visible = false;
             this.adminUsersPanel.Visible = false;
-            this.adminCryptoPanel.Visible = false;
         }
 
         private void dashboardButton_Click(object sender, EventArgs e)
         {
             this.closePanels();
+            this.openChildForm(new Dashboard(this));
         }
 
         private void cryptoButton_Click(object sender, EventArgs e)
@@ -80,12 +80,50 @@ namespace NexCrypto
         {
             this.closePanels();
             this.adminPanel.Visible = true;
-            this.adminCryptoPanel.Visible = true;
+        }
+
+        public void OnLogin(bool isAdmin)
+        {
+            if(!isAdmin)
+            {
+                this.adminButton.Hide();
+            }
         }
 
         public void UpdateUsername(string username)
         {
             this.usernameLabel.Text = username;
+        }
+
+        public void ViewDashboard()
+        {
+            this.closePanels();
+            this.openChildForm(new Dashboard(this));
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cryptosButton_Click(object sender, EventArgs e)
+        {
+            this.closePanels();
+            this.openChildForm(new Cryptos(this));
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.closePanels();
+            this.openChildForm(new CryptoSearch());
+        }
+
+        private void adminUsersButton_Click(object sender, EventArgs e)
+        {
+            this.closePanels();
+            this.adminPanel.Visible = true;
+            this.adminUsersPanel.Visible = true;
+            this.openChildForm(new Users());
         }
     }
 }

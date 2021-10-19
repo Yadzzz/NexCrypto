@@ -41,5 +41,24 @@ namespace NexCrypto.CryptoData
 
             return null;
         }
+
+        public bool GetCrypto(string assetId, out Crypto crypto)
+        {
+            if (assetId.Length == 3)
+            {
+                crypto = this.Cryptos.Find(c => c.asset_id.ToLower() == assetId.ToLower());
+            }
+            else
+            {
+                crypto = this.Cryptos.Find(c => c.name.ToLower() == assetId.ToLower());
+            }
+
+            if(crypto == null)
+            {
+                return false;
+            }
+
+            return true;
+        }
     }
 }
